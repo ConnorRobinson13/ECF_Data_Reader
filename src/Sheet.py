@@ -34,7 +34,7 @@ class Sheet:
         """
         self.__categories.append(category)
 
-    def get_list_of_categories(self):
+    def get_categories(self):
         """
         Gets a list of all the categories in the sheet
         :return: A list of all the categories in the sheet
@@ -53,3 +53,11 @@ class Sheet:
                 return self.__categories[i]
 
         raise ValueError("Category Name does not exist")
+
+    def remove(self, category):
+        name = category.get_name()
+        lst = self.__categories
+
+        for i in range(len(lst)):
+            if lst[i].get_name() == name:
+                self.__categories.remove(self.__categories[i])

@@ -17,4 +17,4 @@ def test_selected_data_sheet():
     cat = s.get_category("Test")
     sds.add_category(cat)
 
-    assert sds.get_list_of_categories()[0].get_name() == "Test"
+    assert sds.get_categories()[0].get_name() == "Test"

@@ -24,14 +24,14 @@ def test_set_sheet_name():
 
 def test_add_category():
     s = Sheet.Sheet("Test")
-    assert len(s.get_list_of_categories()) == 0
+    assert len(s.get_categories()) == 0
     data = ["1", "2", "3", "4"]
     c = Category.Category("test", data)
     s.add_category(c)
 
-    assert len(s.get_list_of_categories()) == 1
-    assert s.get_list_of_categories()[0].get_name() == "test"
-    assert s.get_list_of_categories()[0].get_elements()[1].get_name() == "2"
+    assert len(s.get_categories()) == 1
+    assert s.get_categories()[0].get_name() == "test"
+    assert s.get_categories()[0].get_elements()[1].get_name() == "2"
 
 
 def test_get_category():

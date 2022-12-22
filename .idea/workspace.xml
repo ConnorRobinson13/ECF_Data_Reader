@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da86edb9-0984-42aa-a085-48af7b996319" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SelectedDataSheet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_SelectedDataSheet.py" afterDir="false" />
+    <list default="true" id="da86edb9-0984-42aa-a085-48af7b996319" name="Changes" comment="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object">
+      <change afterPath="$PROJECT_DIR$/src/SheetManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_SheetManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectedDataSheet.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_SelectedDataSheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_SelectedDataSheet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_Sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_Sheet.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671509672955</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object">
+      <created>1671597432753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671597432753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Implement]&#10;&#10;Added Sheet Category and Element Objects and fully tested all classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Implement]&#10;&#10;Added Sheet Category and Element Objects and fully tested all classes" />
+    <MESSAGE value="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object" />
   </component>
 </project>
