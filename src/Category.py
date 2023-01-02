@@ -82,5 +82,12 @@ class Category:
         unique = self.find_unique_elements()
 
         for i in range(len(unique)):
-            temp_element = Element.Element(unique[i], self.__data.count(unique[i]))
+            temp_element = Element.Element(str(unique[i]), self.__data.count(unique[i]))
             self.__elements.append(temp_element)
+
+    def to_string(self):
+        output = "Category Name: " + self.get_name() + "\n"
+        for i in range(0, len(self.get_elements())):
+            output += "- " + self.get_elements()[i].to_string() + "\n"
+
+        return output

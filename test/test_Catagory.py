@@ -35,3 +35,12 @@ def test_find_unique_elements():
     assert c.get_elements()[0].get_occurrences() == 3
     assert c.get_elements()[1].get_occurrences() == 2
     assert c.get_elements()[2].get_occurrences() == 1
+
+
+def test_to_string():
+    data = ["a", "b", "c", "a", "a", "b"]
+    c = Category.Category("Test", data)
+    assert c.to_string() == "Category Name: Test\n" \
+                            "- Element Name: a, Occurrences: 3\n" \
+                            "- Element Name: b, Occurrences: 2\n" \
+                            "- Element Name: c, Occurrences: 1\n"

@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da86edb9-0984-42aa-a085-48af7b996319" name="Changes" comment="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object">
-      <change afterPath="$PROJECT_DIR$/src/SheetManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_SheetManager.py" afterDir="false" />
+    <list default="true" id="da86edb9-0984-42aa-a085-48af7b996319" name="Changes" comment="[Rework, Implement, Test]&#10;&#10;Reworked the structure of this project to remove SelectedDataSheet.py object in favor for just using a regular Sheet.py object. Added a Remove function to Sheet.py. Fully Implemented and tested SheetManager.py. TODO - Add documentation">
+      <change afterPath="$PROJECT_DIR$/src/2020.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileReader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectedDataSheet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_docs/sales_data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/project_docs/sales_data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Element.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Element.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_SelectedDataSheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_SelectedDataSheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_Sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_Sheet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SheetManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/SheetManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_Catagory.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_Catagory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_Element.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_Element.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +49,27 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2InheQYVgYY4EgVfjzyicgPNocV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/conno/PycharmProjects/ECF_Data_Reader&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/conno/PycharmProjects/ECF_Data_Reader",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\conno\PycharmProjects\ECF_Data_Reader\test" />
       <recent name="C:\Users\conno\PycharmProjects\ECF_Data_Reader\project_docs" />
       <recent name="C:\Users\conno\PycharmProjects\ECF_Data_Reader\src" />
+      <recent name="C:\Users\conno\PycharmProjects\ECF_Data_Reader\test" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671597432753</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Rework, Implement, Test]&#10;&#10;Reworked the structure of this project to remove SelectedDataSheet.py object in favor for just using a regular Sheet.py object. Added a Remove function to Sheet.py. Fully Implemented and tested SheetManager.py. TODO - Add documentation">
+      <created>1671688584250</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671688584250</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,8 +173,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="[Implement]&#10;&#10;Added Sheet Category and Element Objects and fully tested all classes" />
     <MESSAGE value="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Implement and Document and Test]&#10;&#10;Implemented SelectedDataSheet.py and added tests + documentation for both that and Sheet object" />
+    <MESSAGE value="[Rework, Implement, Test]&#10;&#10;Reworked the structure of this project to remove SelectedDataSheet.py object in favor for just using a regular Sheet.py object. Added a Remove function to Sheet.py. Fully Implemented and tested SheetManager.py. TODO - Add documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Rework, Implement, Test]&#10;&#10;Reworked the structure of this project to remove SelectedDataSheet.py object in favor for just using a regular Sheet.py object. Added a Remove function to Sheet.py. Fully Implemented and tested SheetManager.py. TODO - Add documentation" />
   </component>
 </project>

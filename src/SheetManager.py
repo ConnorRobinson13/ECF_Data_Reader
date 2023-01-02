@@ -1,3 +1,5 @@
+from src.FileReader import *
+from src.FileWriter import write_file
 from src.Sheet import Sheet
 
 
@@ -49,3 +51,13 @@ class SheetManager:
         if len(self.__selectedDataSheet.get_categories()) == 0:
             raise ValueError("No Categories have been selected")
         self.__selectedDataSheet.remove(category)
+
+    def load_sheet(self, file_name):
+        sheet = read_excel_file(file_name)
+        self.set_current_sheet(sheet)
+
+    def save_data_full(self):
+        write_file(self.__currentSheet)
+
+    def save_data_selected(self):
+        write_file(self.__selectedDataSheet)

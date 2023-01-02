@@ -61,3 +61,12 @@ class Sheet:
         for i in range(len(lst)):
             if lst[i].get_name() == name:
                 self.__categories.remove(self.__categories[i])
+
+    def to_string(self):
+        output = "Sheet Name: " + self.get_sheet_name() + "\n"
+        for i in range(0,len(self.get_categories())):
+            output += "***************\n"
+            output += self.get_categories()[i].to_string()
+            output += "***************"
+
+        return output
